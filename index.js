@@ -15,7 +15,18 @@ var conn = new sf.Connection({
 });
 var username = 'ramit.singh@cognizant.com';
 var password = 'ramit_229';
-	
+
+conn.login(username, password, function(err, userInfo) {
+  if (err) { return console.error(err); }
+  // Now you can get the access token and instance URL information. 
+  // Save them to establish connection next time. 
+  console.log(conn.accessToken);
+  console.log(conn.instanceUrl);
+  // logged in user property 
+  console.log("User ID: " + userInfo.id);
+  console.log("Org ID: " + userInfo.organizationId);
+  // ... 
+});	
 
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
