@@ -12,7 +12,8 @@
   },
   "keywords": [
     "node",
-    "heroku"
+    "heroku",
+    "express"
   ],
   "author": "RamitSingh",
   "license": "MIT",
