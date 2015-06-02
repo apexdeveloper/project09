@@ -6,6 +6,9 @@
   "scripts": {
     "start": "node index.js"
   },
+  "dependencies": {
+    "express": "~4.9.x"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/apexdeveloper/project09.git"
